@@ -1,0 +1,13 @@
+<resources>
+    <string name="hello_world">Hello world</string>
+    <string name="navigation">navigation</string>
+    <string name="navigation1">navigation1</string>
+    <string name="navigation2">navigation2</string>
+
+    <!--navigation-->
+    <string name="app_name">My Application</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>
