@@ -13,6 +13,7 @@ public class FragmentPagerAdapter extends androidx.fragment.app.FragmentPagerAda
         super(fm);
     }
 
+
     @NonNull
     @Override
     public Fragment getItem(int position) {
