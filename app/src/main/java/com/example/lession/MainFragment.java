@@ -82,8 +82,6 @@ public class MainFragment extends Fragment {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-//                if (seekBar != null) {
-//                    textView.setText(progress);
                 textView.setText("" + progress + "");
             }
 
