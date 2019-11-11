@@ -1,10 +1,9 @@
-package com.example.lession.data;
+package com.example.lession;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
-import com.example.lession.MainFragment;
 import com.example.lession.history.HistoryFragment;
 import com.example.lession.settings.SettingsFragment;
 
@@ -19,9 +18,9 @@ public class FragmentPagerAdapter extends androidx.fragment.app.FragmentPagerAda
     public Fragment getItem(int position) {
         switch (position){
             case 0:
-                return new HistoryFragment();
-            case 1:
                 return new MainFragment();
+            case 1:
+                return new HistoryFragment();
             case 2:
                 return new SettingsFragment();
         }

@@ -8,11 +8,11 @@ import androidx.lifecycle.ViewModel;
 public class MainViewModel extends ViewModel {
 
     MutableLiveData<String> title = new MutableLiveData<>();
-    public void init(){
+    void init(){
         title.setValue("MAin Activity value");
         Log.d("ololo", "init: ");
     }
-    public void changeTitle(){
+    void changeTitle(){
         title.setValue("NEw title");
     }
     // TODO: Implement the ViewModel

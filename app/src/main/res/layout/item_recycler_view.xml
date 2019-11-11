@@ -1,6 +1,137 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/text_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:layout_margin="30dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="338dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/category_mi"
+            android:layout_width="280.68dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5sp"
+            android:text="Category: Mixed"
+            android:textAppearance="@style/category_mi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct answer 8/10"
+            android:layout_marginLeft="5sp"
+            android:textAppearance="@style/correct_ans"
+            android:layout_marginTop="35dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 may 2019 20:32"
+            android:layout_marginTop="70dp"
+            android:textAppearance="@style/may_2019_20"
+            android:layout_marginLeft="250dp"
+            android:textSize="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficulty: Easy"
+            android:layout_marginLeft="5sp"
+            android:textAppearance="@style/difficulty_"
+            android:layout_marginTop="60dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="338dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="200dp">
+
+        <TextView
+            android:layout_width="280.68dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5sp"
+            android:text="Category: Mixed"
+            android:textAppearance="@style/category_mi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct answer 8/10"
+            android:layout_marginLeft="5sp"
+            android:textAppearance="@style/correct_ans"
+            android:layout_marginTop="35dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 may 2019 20:32"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="250dp"
+            android:textAppearance="@style/may_2019_20"
+            android:textSize="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficulty: All"
+            android:layout_marginLeft="5sp"
+            android:textAppearance="@style/correct_ans"
+            android:layout_marginTop="60dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="338dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="300dp">
+
+        <TextView
+            android:layout_width="280.68dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5sp"
+            android:text="Category: Mixed"
+            android:textAppearance="@style/category_mi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 may 2019 20:32"
+            android:textAppearance="@style/may_2019_20"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="250dp"
+            android:textSize="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct answer 8/10"
+            android:layout_marginLeft="5sp"
+            android:textAppearance="@style/correct_ans"
+            android:layout_marginTop="35dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficulty: All"
+            android:layout_marginLeft="5sp"
+            android:textAppearance="@style/correct_ans"
+            android:layout_marginTop="60dp"/>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

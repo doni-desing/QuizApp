@@ -5,9 +5,73 @@
     <string name="navigation2">navigation2</string>
 
     <!--navigation-->
+    <string name="quiz">Quiz </string>
     <string name="app_name">My Application</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="start">Start</string>
+    <string name="main_fragment">main fragment</string>
+    <string name="category_mixed">Category: Mixed</string>
+    <string name="quiz312" />
+    <string name="Myapp" />
+
+    <string-array name="context">
+        <item>All</item>
+        <item>Together</item>
+        <item>Alone</item>
+    </string-array>
+
+    <string-array name="category_list">
+        <item>All</item>
+        <item>General Knowledge</item>
+        <item>Entertainment: Books</item>
+        <item>Entertainment: Film</item>
+        <item>Entertainment: Music</item>
+        <item>Entertainment: Musicals &amp; Theatres</item>
+        <item>Entertainment: Television</item>
+        <item>Entertainment: Video Games</item>
+        <item>Entertainment: Board Games</item>
+        <item>Science &amp; Nature</item>
+        <item>Science: Computers</item>
+        <item>Science: Mathematics</item>
+        <item>Mythology</item>
+        <item>Sports</item>
+        <item>Geography</item>
+        <item>History</item>
+        <item>Politics</item>
+        <item>Art</item>
+        <item>Celebrities</item>
+        <item>Animals</item>
+        <item>Vehicles</item>
+        <item>Entertainment: Comics</item>
+        <item>Science: Gadgets</item>
+        <item>Entertainment: Japanese Anime &amp; Manga</item>
+        <item>Entertainment: Cartoon &amp; Animations</item>
+    </string-array>
+
+    <string-array name="difficulty_list">
+        <item>Any</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+    <string-array name="settings_rate">
+        <item>Rate us</item>
+    </string-array>
+
+    <string-array name="settings_share">
+        <item>Share this app</item>
+    </string-array>
+
+    <string-array name="settings_leave">
+        <item>Leave feedback</item>
+    </string-array>
+
+    <string-array name="settings_clear">
+        <item>Clear history</item>
+
+    </string-array>
 
 </resources>

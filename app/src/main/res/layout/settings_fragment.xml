@@ -3,13 +3,126 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
     tools:context="com.example.lession.settings.SettingsFragment">
 
     <TextView
         android:id="@+id/text_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textColor="#000"
+        android:layout_margin="20dp"
+        android:textSize="24dp"/>
+
+    <TextView
+    android:id="@+id/share_this_"
+    android:layout_width="120dp"
+    android:layout_height="20dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="23dp"
+    android:layout_alignParentTop="true"
+    android:layout_marginTop="102dp"
+    android:text="Share this app"
+    android:textAppearance="@style/share_this_"
+    android:gravity="center_vertical" />
+
+    <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/rectangle_2"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/rectangle_2" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="182dp"
+        android:text="Rate us"
+        android:textAppearance="@style/rate_us"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/leave_feedb"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="262dp"
+        android:text="Leave feedback"
+        android:textAppearance="@style/leave_feedb"
+        android:gravity="center_vertical" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/rectangle_2" />
+
+    <TextView
+        android:id="@+id/clear_histo"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="341dp"
+        android:text="Clear history"
+        android:textAppearance="@style/clear_histo"
+        android:gravity="center_vertical" />
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/rectangle_2" />
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/vector"
+    android:layout_marginTop="110dp"
+    android:layout_marginLeft="150dp"
+    android:layout_gravity="center|top"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="150dp"
+        android:layout_gravity="center|top"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="150dp"
+        android:layout_gravity="center|top"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector"
+        android:layout_marginTop="345dp"
+        android:layout_marginLeft="150dp"
+        android:layout_gravity="center|top"/>
 
 </FrameLayout>
