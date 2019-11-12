@@ -71,7 +71,11 @@ public class MainFragment extends Fragment {
         niceSpinner = getView().findViewById(R.id.spinner);
         niceSpinner1 = getView().findViewById(R.id.difficuly_spin);
 
-        List<String> list = new LinkedList<>(Arrays.asList("All", "Alone", "Together"));
+        List<String> list = new LinkedList<>(Arrays.asList("All", "Alone", "Together","Animals","Celebrities","Entertainment: Cartoon &amp; Animations",
+                "Mythology","Politics","Science: Mathematics","Science: Computers","Entertainment: Comics",
+                "Science: Gadgets","Geography","History","Vehicles","Science &amp Nature",
+                "Books","Knowledge","Film","Music",
+                "Entertainment: Japanese Anime &amp; Manga","Entertainment: Board Games","Entertainment: Video Games","Entertainment: Musicals &amp; Theatres","Entertainment: Television"));
         niceSpinner.attachDataSource(list);
         niceSpinner1.attachDataSource(list);
 
@@ -104,15 +108,14 @@ public class MainFragment extends Fragment {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(getActivity(), QuizActivity.class);
-                    intent.putExtra("quiestion", String.valueOf(niceSpinner));
-                    intent.putExtra("category", String.valueOf(niceSpinner1));
-                    intent.putExtra("difficulty", String.valueOf(seekBar));
+                    intent.putExtra("quiestion",niceSpinner.getSelectedIndex() );
+                    intent.putExtra("category", niceSpinner1.getSelectedIndex());
+                    intent.putExtra("difficulty", seekBar.getProgress());
                     startActivityForResult(intent, 1);
 
                 }
             });
         }
-
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

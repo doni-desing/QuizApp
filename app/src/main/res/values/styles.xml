@@ -173,6 +173,26 @@ Difficulty: Easy
 12 may 2019 20:32
 </string>
 
+    <style name="v_1_0_0">
+
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #A6A6A6
+        </item>
+
+    </style>
+
+
+    <!-- strings.xml -->
+    <string name="v_1_0_0">
+
+v 1.0.0
+</string>
+
+
 
 
 </resources>
