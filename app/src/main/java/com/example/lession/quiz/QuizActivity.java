@@ -5,6 +5,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -14,19 +15,22 @@ public class QuizActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
 
+
+    public static void start(Context context, int seekBarProgress, int niceSpinner1, int niceSpinner2){
+
+        Intent ruturnIntent = new Intent(context, QuizActivity.class);
+        ruturnIntent.getIntExtra("quiestion", niceSpinner1);
+        ruturnIntent.getIntExtra("category", niceSpinner2);
+        ruturnIntent.getIntExtra("difficulty", seekBarProgress);
+        context.startActivity(ruturnIntent);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz_activity);
-
         recyclerView = findViewById(R.id.recycler_view);
 
-//        Intent ruturnIntent = getIntent();
-//        ruturnIntent.getStringExtra("quiestion");
-//        ruturnIntent.getStringExtra("category");
-//        ruturnIntent.getStringExtra("difficulty");
-//        setResult(RESULT_OK, ruturnIntent);
-//        finish();
+        getIntent().getStringExtra("quiestion");
 
         QuizViewModel quizViewModel = ViewModelProviders.of(this).get(QuizViewModel.class);
         quizViewModel.getUsers().observe(this, new Observer<String>() {

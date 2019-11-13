@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.example.lession.history.HistoryFragment;
+import com.example.lession.main.MainFragment;
 import com.example.lession.settings.SettingsFragment;
 
 public class FragmentPagerAdapter extends androidx.fragment.app.FragmentPagerAdapter {

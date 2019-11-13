@@ -4,7 +4,6 @@
     <string name="navigation1">navigation1</string>
     <string name="navigation2">navigation2</string>
 
-    <!--navigation-->
     <string name="quiz">Quiz </string>
     <string name="app_name">My Application</string>
     <string name="title_home">Home</string>
@@ -50,28 +49,20 @@
         <item>Entertainment: Cartoon &amp; Animations</item>
     </string-array>
 
-    <string-array name="difficulty_list">
-        <item>Any</item>
-        <item>Easy</item>
-        <item>Medium</item>
-        <item>Hard</item>
-    </string-array>
-
-    <string-array name="settings_rate">
+    <string name="settings_rate">
         <item>Rate us</item>
-    </string-array>
+    </string>
 
-    <string-array name="settings_share">
+    <string name="settings_share">
         <item>Share this app</item>
-    </string-array>
+    </string>
 
-    <string-array name="settings_leave">
+    <string name="settings_leave">
         <item>Leave feedback</item>
-    </string-array>
+    </string>
 
-    <string-array name="settings_clear">
+    <string name="settings_clear">
         <item>Clear history</item>
-
-    </string-array>
+    </string>
 
 </resources>

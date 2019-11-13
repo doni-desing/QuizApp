@@ -1,4 +1,4 @@
-package com.example.lession;
+package com.example.lession.main;
 
 import androidx.annotation.RequiresApi;
 import androidx.lifecycle.ViewModelProviders;
@@ -12,34 +12,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.SeekBar;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.lession.quiz.QuizActivity;
 import com.example.lession1.R;
 
 import org.angmarch.views.NiceSpinner;
-import org.angmarch.views.OnSpinnerItemSelectedListener;
-
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Objects;
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
 
 public class MainFragment extends Fragment {
 
-    private MainViewModel mViewModel;
     private TextView textView;
     private TextView quistion;
     private TextView difficulty;
@@ -61,23 +47,13 @@ public class MainFragment extends Fragment {
 
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
         seekBar = getView().findViewById(R.id.seekBar);
         textView = getView().findViewById(R.id.view_seek);
         niceSpinner = getView().findViewById(R.id.spinner);
         niceSpinner1 = getView().findViewById(R.id.difficuly_spin);
-
-        List<String> list = new LinkedList<>(Arrays.asList("All", "Alone", "Together","Animals","Celebrities","Entertainment: Cartoon &amp; Animations",
-                "Mythology","Politics","Science: Mathematics","Science: Computers","Entertainment: Comics",
-                "Science: Gadgets","Geography","History","Vehicles","Science &amp Nature",
-                "Books","Knowledge","Film","Music",
-                "Entertainment: Japanese Anime &amp; Manga","Entertainment: Board Games","Entertainment: Video Games","Entertainment: Musicals &amp; Theatres","Entertainment: Television"));
-        niceSpinner.attachDataSource(list);
-        niceSpinner1.attachDataSource(list);
 
         seekBar.setMax(50);
         seekBar.setMin(5);
@@ -107,12 +83,8 @@ public class MainFragment extends Fragment {
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(getActivity(), QuizActivity.class);
-                    intent.putExtra("quiestion",niceSpinner.getSelectedIndex() );
-                    intent.putExtra("category", niceSpinner1.getSelectedIndex());
-                    intent.putExtra("difficulty", seekBar.getProgress());
-                    startActivityForResult(intent, 1);
-
+                    QuizActivity.start(getContext(), seekBar.getProgress()
+                    ,niceSpinner.getSelectedIndex(), niceSpinner1.getSelectedIndex());
                 }
             });
         }

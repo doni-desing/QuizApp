@@ -2,11 +2,13 @@ package com.example.lession.history;
 
 public class HisoryModel {
     String category,answer,Difficulty;
+    int data;
 
-    public HisoryModel(String category, String answer, String difficulty) {
+    public HisoryModel(String category, String answer, String difficulty, int data) {
         this.category = category;
         this.answer = answer;
         Difficulty = difficulty;
+        this.data = data;
     }
 
     public String getCategory() {

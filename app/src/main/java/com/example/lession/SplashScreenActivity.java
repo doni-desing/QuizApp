@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.example.lession.quiz.QuizActivity;
 import com.example.lession1.R;
 import com.mrgames13.jimdo.splashscreen.App.SplashScreenBuilder;
 
