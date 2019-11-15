@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:backgroundTintMode="multiply"
         android:layout_gravity="center|top"
-        android:layout_marginTop="330dp"/>
+        android:layout_marginTop="315dp"/>
 
     <TextView
         android:id="@+id/question"
@@ -55,6 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#3F3356"
+        android:text="10"
         android:layout_gravity="center"
         android:layout_marginBottom="80dp"/>
 
@@ -68,13 +69,13 @@
         android:layout_marginEnd="110dp"/>
 
 <org.angmarch.views.NiceSpinner
-            android:id="@+id/spinner"
+            android:id="@+id/niceSpinner"
             android:layout_width="250dp"
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="60dp"
-            android:layout_marginTop="35dp"
-            app:entries="@array/category_list"/>
+            android:layout_marginTop="35dp"/>
+<!--            -->
 
     <TextView
         android:id="@+id/difficuly"
@@ -92,7 +93,9 @@
         android:layout_height="40dp"
         android:layout_gravity="center_vertical"
         android:layout_marginStart="60dp"
-        app:entries="@array/category_list"
+        app:entries="@string/category_list"
         android:layout_marginTop="107dp"/>
+
+    <!--        -->
 
 </FrameLayout>

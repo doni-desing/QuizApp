@@ -7,18 +7,11 @@
     android:viewportWidth="375"
     android:viewportHeight="80"
     >
-
     <group>
-
-        <clip-path
-            android:pathData="M0 0H375V80H0V0Z"
-            />
 
         <path
             android:pathData="M0 0H375V80H0V0Z"
             android:strokeWidth="2"
-            android:strokeColor="#EEEEEE"
-            />
-
+            android:strokeColor="#EEEEEE"/>
     </group>
 </vector>

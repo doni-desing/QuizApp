@@ -19,9 +19,9 @@ public class QuizActivity extends AppCompatActivity {
     public static void start(Context context, int seekBarProgress, int niceSpinner1, int niceSpinner2){
 
         Intent ruturnIntent = new Intent(context, QuizActivity.class);
-        ruturnIntent.getIntExtra("quiestion", niceSpinner1);
-        ruturnIntent.getIntExtra("category", niceSpinner2);
-        ruturnIntent.getIntExtra("difficulty", seekBarProgress);
+        ruturnIntent.putExtra("quiestion", niceSpinner1);
+        ruturnIntent.putExtra("category", niceSpinner2);
+        ruturnIntent.putExtra("difficulty", seekBarProgress);
         context.startActivity(ruturnIntent);
     }
     @Override

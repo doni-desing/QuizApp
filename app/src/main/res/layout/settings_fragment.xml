@@ -6,13 +6,13 @@
     tools:context="com.example.lession.settings.SettingsFragment">
 
     <TextView
-        android:id="@+id/text_dashboard"
+        android:id="@+id/text_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Settings"
-        android:textColor="#000"
         android:layout_margin="20dp"
-        android:textSize="24dp"/>
+        android:textColor="#000"
+        android:textSize="30sp"/>
 
     <TextView
     android:id="@+id/share_this_"

@@ -1,10 +1,7 @@
 package com.example.lession.main;
 
 import androidx.annotation.RequiresApi;
-import androidx.lifecycle.ViewModelProviders;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -43,25 +40,27 @@ public class MainFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.main_fragment, container, false);
+       View view = LayoutInflater.from(getContext()).inflate(R.layout.main_fragment,container, false);
+        seekBar = view.findViewById(R.id.seekBar);
+        textView = view.findViewById(R.id.view_seek);
+        niceSpinner = view.findViewById(R.id.niceSpinner);
+        niceSpinner1 = view.findViewById(R.id.difficuly_spin);
 
+        return view;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        seekBar = getView().findViewById(R.id.seekBar);
-        textView = getView().findViewById(R.id.view_seek);
-        niceSpinner = getView().findViewById(R.id.spinner);
-        niceSpinner1 = getView().findViewById(R.id.difficuly_spin);
-
-        seekBar.setMax(50);
-        seekBar.setMin(5);
-        seekBar.setProgress(0);
 
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                seekBar.setMax(50);
+                seekBar.setMin(5);
+                seekBar.setProgress(0);
+
                 textView.setText("" + progress + "");
             }
 
@@ -88,14 +87,4 @@ public class MainFragment extends Fragment {
                 }
             });
         }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 1){
-            if (resultCode == Activity.RESULT_OK){
-
-            }
-        }
-    }
 }

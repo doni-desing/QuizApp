@@ -21,7 +21,7 @@
         <item>Alone</item>
     </string-array>
 
-    <string-array name="category_list">
+    <string name="category_list">
         <item>All</item>
         <item>General Knowledge</item>
         <item>Entertainment: Books</item>
@@ -47,7 +47,8 @@
         <item>Science: Gadgets</item>
         <item>Entertainment: Japanese Anime &amp; Manga</item>
         <item>Entertainment: Cartoon &amp; Animations</item>
-    </string-array>
+    </string>
+    <string name="leave_feedb">Leave feedback</string>
 
     <string name="settings_rate">
         <item>Rate us</item>
@@ -60,6 +61,14 @@
     <string name="settings_leave">
         <item>Leave feedback</item>
     </string>
+
+    <string name="clear_histo">Clear history</string>
+    <string name="settings">Settings</string>
+    <string name="category_mi">Category: Mixed</string>
+    <string name="correct_ans">Correct answers: 8/10</string>
+    <string name="difficulty_">Difficulty: Easy</string>
+    <string name="may_2019_20">12 may 2019 20:32</string>
+    <string name="v_1_0_0">v 1.0.0</string>
 
     <string name="settings_clear">
         <item>Clear history</item>
