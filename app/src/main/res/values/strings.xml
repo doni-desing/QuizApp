@@ -21,7 +21,7 @@
         <item>Alone</item>
     </string-array>
 
-    <string name="category_list">
+    <string-array name="category_list">
         <item>All</item>
         <item>General Knowledge</item>
         <item>Entertainment: Books</item>
@@ -47,7 +47,7 @@
         <item>Science: Gadgets</item>
         <item>Entertainment: Japanese Anime &amp; Manga</item>
         <item>Entertainment: Cartoon &amp; Animations</item>
-    </string>
+    </string-array>
     <string name="leave_feedb">Leave feedback</string>
 
     <string name="settings_rate">

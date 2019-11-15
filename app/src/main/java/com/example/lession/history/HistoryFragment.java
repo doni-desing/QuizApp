@@ -40,6 +40,18 @@ public class HistoryFragment extends Fragment {
         models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
         models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
         models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
+        models.add(new HisoryModel("Category: Mixed", "correct answer 8/10", "Difficulty: hard", 3));
 
         historyAdapter = new HistoryAdapter(models);
         recyclerView = view.findViewById(R.id.recycler_view);

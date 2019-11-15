@@ -74,8 +74,8 @@
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="60dp"
+            app:entries="@array/category_list"
             android:layout_marginTop="35dp"/>
-<!--            -->
 
     <TextView
         android:id="@+id/difficuly"
@@ -85,7 +85,7 @@
         android:textColor="#A9A9A9"
         android:layout_gravity="center"
         android:layout_marginTop="75dp"
-        android:layout_marginRight="110dp"/>
+        android:layout_marginEnd="110dp"/>
 
     <org.angmarch.views.NiceSpinner
         android:id="@+id/difficuly_spin"
@@ -93,7 +93,7 @@
         android:layout_height="40dp"
         android:layout_gravity="center_vertical"
         android:layout_marginStart="60dp"
-        app:entries="@string/category_list"
+        app:entries="@array/category_list"
         android:layout_marginTop="107dp"/>
 
 </FrameLayout>
