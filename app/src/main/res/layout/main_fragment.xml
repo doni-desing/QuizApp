@@ -96,6 +96,4 @@
         app:entries="@string/category_list"
         android:layout_marginTop="107dp"/>
 
-    <!--        -->
-
 </FrameLayout>
