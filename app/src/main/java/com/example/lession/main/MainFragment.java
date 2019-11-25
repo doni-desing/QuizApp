@@ -40,7 +40,7 @@ public class MainFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-       View view = LayoutInflater.from(getContext()).inflate(R.layout.main_fragment,container, false);
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.main_fragment, container, false);
         seekBar = view.findViewById(R.id.seekBar);
         textView = view.findViewById(R.id.view_seek);
         niceSpinner = view.findViewById(R.id.niceSpinner);
@@ -75,17 +75,25 @@ public class MainFragment extends Fragment {
             }
         });
 
-            button = getView().findViewById(R.id.btn_onClick);
-            quistion = getView().findViewById(R.id.question);
-            difficulty = getView().findViewById(R.id.difficuly);
-            category = getView().findViewById(R.id.categary);
+        button = getView().findViewById(R.id.btn_onClick);
+        quistion = getView().findViewById(R.id.question);
+        difficulty = getView().findViewById(R.id.difficuly);
+        category = getView().findViewById(R.id.categary);
 
-            button.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    QuizActivity.start(getContext(), seekBar.getProgress()
-                    ,niceSpinner.getSelectedIndex(), niceSpinner1.getSelectedIndex());
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                int categoryId = 0;
+                if(niceSpinner.getSelectedIndex() != 0){
+                    categoryId = niceSpinner.getSelectedIndex() + 8;
                 }
-            });
-        }
+
+                QuizActivity.start(getContext(),
+                        seekBar.getProgress(),
+                        categoryId,
+                        niceSpinner1.getSelectedItem().toString());
+            }
+        });
+    }
 }

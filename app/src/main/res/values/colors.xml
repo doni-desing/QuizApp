@@ -9,6 +9,6 @@
     <color name="login_form_details">#ccffffff</color>
     <color name="login_form_details_light">#1A1F1E1E</color>
     <color name="login_form_details_medium">#66ffffff</color>
-
+    <color name="btn_cycrle">#6979F8</color>
 
 </resources>

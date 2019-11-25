@@ -1,24 +1,14 @@
 package com.example.lession.main;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.viewpager.widget.ViewPager;
 
-import android.content.res.ColorStateList;
-import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.MenuItem;
-import android.widget.TextView;
 
-import com.example.lession.FragmentPagerAdapter;
 import com.example.lession1.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.ripple.RippleUtils;
 
 public class MainActivity extends AppCompatActivity {
 

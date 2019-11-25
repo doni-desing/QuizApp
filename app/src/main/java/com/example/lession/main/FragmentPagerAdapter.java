@@ -1,4 +1,4 @@
-package com.example.lession;
+package com.example.lession.main;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

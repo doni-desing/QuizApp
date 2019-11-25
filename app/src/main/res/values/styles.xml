@@ -60,4 +60,11 @@
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">#A6A6A6</item>
     </style>
+
+    <style name="navigation">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#1A051D</item>
+    </style>
+
+
 </resources>
